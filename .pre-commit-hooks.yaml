@@ -1,0 +1,6 @@
+- id: qmllint-conan
+  name: qmllint-conan
+  description: Runs qmllint on .qml files after installing specified conan-package
+  language: python
+  files: \.qml$
+  entry: qmllint.py
