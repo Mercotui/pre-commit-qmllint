@@ -1,6 +1,12 @@
-- id: qmllint-conan
-  name: qmllint-conan
-  description: Runs qmllint on .qml files after installing specified conan-package
-  language: python
+- id: qmllint
+  name: qmllint
+  description: Runs qmllint on .qml files
+  language: system
   files: \.qml$
-  entry: qmllint.py
+  entry: qmllint
+- id: qmllint-conan-venv
+  name: qmllint conan venv
+  description: Activates a conan venv to run qmllint on .qml files
+  language: script
+  files: \.qml$
+  entry: qmllint-conan-venv.sh
